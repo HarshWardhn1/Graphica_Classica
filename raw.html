@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AITians_Hallmark</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+            background-image: url(OIP.jpg);
+           
+                }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+   
+
+    <form>
+        <label for="Your Name">Your Name:</label>
+        <input type="text" id="Your Name" name="Your Name" placeholder="Your Name" required>
+
+        <label for="Resume Summary">Resume Summary:</label>
+        <input type="text" id="Resume Summary" name="Resume Summary" placeholder="Enter Resume Summary" required>
+        <label for="Year">Year:</label>
+        <input type="number" id="Year" name="Year" placeholder="Year" required>  
+        <label for="Pursuing Degree">Pursuing Degree:</label>
+        <input type="text" id="Pursuing Degree" name="BE Or ME" placeholder="Pursuing Degree" required>
+        <label for="Department">Department:</label>
+        <input type="text" id="Department" name="Department" placeholder="Enter Department" required>
+        
+
+       
+       
+        <label for="Skills1">Skills1:</label>
+        <input type="text" id="Skills1" name="Skills1" placeholder="Skills1" required>
+        
+        <label for="Skills2">Skills2:</label>
+        <input type="text" id="Skills1" name="Skills2" placeholder="Skills2" required>
+        <label for="Skills3">Skills3:</label>
+        <input type="text" id="Skills3" name="Skills3" placeholder="Skills3" required>
+        <label for="Skills4">Skills4:</label>
+        <input type="text" id="Skills4" name="Skills4" placeholder="Skills4" required>
+        <label for="WorkExperience">Work Experience:</label>
+        <input type="text" id="Work Experience" name="Work Experience" placeholder="Work Experience" required>
+        <label for="Achievements">Achievements:</label>
+        
+        <input type="text" id="Achievements" name="Achievements" placeholder="Achievements" required>
+        <label for="Extra-Curricular Extra-Curricular Achievements">Extra-Curricular Achievements:</label>
+        
+        <input type="text" id="Extra-Curricular Achievements" name="Extra-Curricular Achievements" placeholder="Extra-Curricular Achievements" required>
+        <label for="Projects">Projects:</label>
+        <input type="text" id="Projects" name="Projects" placeholder="Projects" required>
+        <label for="GitHub ">GitHub :</label>
+        <input type="text" id="GitHub " name="GitHub " placeholder="GitHub " required>
+        <label for="Email">Email:</label>
+        <input type="text" id="Email" name="Email" placeholder="Email" required>
+        <label for="LinkedIn">LinkedIn:</label>
+        <input type="text" id="LinkedIn" name="LinkedIn" placeholder="LinkedIn" required>
+        
+        <button type="button" onclick="submitForm(), submitForm1,submitForm2,submitForm3,submitForm4">Submit</button>
+      
+       
+        
+        <script>
+            function submitForm() {
+                const inputValue = document.getElementById('Your Name').value;
+            
+                const encodedValue = encodeURIComponent(inputValue);
+               
+                window.location.href = 'index.html?value=' + encodedValue;
+            }
+         
+            function submitForm1() {
+                const inputValue1 = document.getElementById('Resume Summary').value;
+            
+                const encodedValue1 = encodeURIComponent(inputValue1);
+               
+                window.location.href = 'index.html?value=' + encodedValue1;
+            }
+   
+            function submitForm2() {
+                const inputValue2 = document.getElementById('Year').value;
+            
+                const encodedValue2 = encodeURIComponent(inputValue2);
+               
+                window.location.href = 'index.html?value=' + encodedValue2;
+            }
+      
+            function submitForm3() {
+                const inputValue3 = document.getElementById('Pursuing Degree').value;
+            
+                const encodedValue3 = encodeURIComponent(inputValue3);
+               
+                window.location.href = 'index.html?value=' + encodedValue3;
+            }
+       
+            function submitForm4() {
+                const inputValue4 = document.getElementById('Department').value;
+            
+                const encodedValue4 = encodeURIComponent(inputValue4);
+               
+                window.location.href = 'index.html?value=' + encodedValue4;
+            }
+      
+            function submitForm5() {
+                const inputValue5 = document.getElementById('Skills1').value;
+            
+                const encodedValue5 = encodeURIComponent(inputValue5);
+               
+                window.location.href = 'index.html?value=' + encodedValue5;
+            }
+       
+            function submitForm6() {
+                const inputValue6 = document.getElementById('Skills2').value;
+            
+                const encodedValue6 = encodeURIComponent(inputValue6);
+               
+                window.location.href = 'index.html?value=' + encodedValue6;
+            }
+    
+            function submitForm7() {
+                const inputValue7 = document.getElementById('Skills3').value;
+            
+                const encodedValue7 = encodeURIComponent(inputValue7);
+               
+                window.location.href = 'index.html?value=' + encodedValue7;
+            }
+     
+            function submitForm8() {
+                const inputValue8 = document.getElementById('Skills4').value;
+            
+                const encodedValue8 = encodeURIComponent(inputValue8);
+               
+                window.location.href = 'index.html?value=' + encodedValue8;
+            }
+         
+            function submitForm9() {
+                const inputValue9 = document.getElementById('Work Experience').value;
+            
+                const encodedValue9 = encodeURIComponent(inputValue9);
+               
+                window.location.href = 'index.html?value=' + encodedValue9;
+            }
+        
+            function submitForm10() {
+                const inputValue10 = document.getElementById('Achievements').value;
+            
+                const encodedValue10 = encodeURIComponent(inputValue10);
+               
+                window.location.href = 'index.html?value=' + encodedValue10;
+            }
+      
+            function submitForm11() {
+                const inputValue11 = document.getElementById('Extra-Curricular Achievements').value;
+            
+                const encodedValue11 = encodeURIComponent(inputValue11);
+               
+                window.location.href = 'index.html?value=' + encodedValue11;
+            }
+     
+            function submitForm12() {
+                const inputValue12 = document.getElementById('Projects').value;
+            
+                const encodedValue12 = encodeURIComponent(inputValue12);
+               
+                window.location.href = 'index.html?value=' + encodedValue12;
+            }
+        
+            function submitForm13() {
+                const inputValue13 = document.getElementById('GitHub ').value;
+            
+                const encodedValue13 = encodeURIComponent(inputValue13);
+               
+                window.location.href = 'index.html?value=' + encodedValue13;
+            }
+        
+            function submitForm14() {
+                const inputValue14 = document.getElementById('Email').value;
+            
+                const encodedValue14 = encodeURIComponent(inputValue14);
+               
+                window.location.href = 'index.html?value=' + encodedValue14;
+            }
+     
+            function submitForm15() {
+                const inputValue15 = document.getElementById('LinkedIn').value;
+            
+                const encodedValue15 = encodeURIComponent(inputValue15);
+               
+                window.location.href = 'index.html?value=' + encodedValue15;
+            }
+         </script>
+       
+        <!-- <button onclick="openWebPage()">Submit</button>
+
+        <script>
+            function openWebPage() {
+                window.open('index.html','_blank' );
+            }
+        </script>    -->
+<!-- 
+        <button type="submit">Submit</button> -->
+    </form>
+</body>
+</html>
